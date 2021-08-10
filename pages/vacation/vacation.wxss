@@ -1,0 +1,119 @@
+.vacation .Vtop {
+  height: 300rpx;
+  background-image: linear-gradient(#f2a848, #eb6945);
+  position: relative;
+}
+.vacation .Vtop .title {
+  width: 750rpx;
+  height: 120rpx;
+  color: #ffffff;
+  line-height: 120rpx;
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: 900;
+}
+.vacation .Vtop .title_2 {
+  position: absolute;
+  top: 42rpx;
+  right: 34rpx;
+  font-weight: 900;
+  color: #ffffff;
+  width: 100rpx;
+  height: 50rpx;
+  border: white 1px solid;
+  border-radius: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+.vacation .Vtop .Vtop_1 {
+  display: flex;
+}
+.vacation .Vtop .Vtop_1 .Vtop_1_1 {
+  width: 14.28%;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  font-size: 20rpx;
+  color: #ffffff;
+}
+.vacation .Vtop .Vtop_1 .Vtop_1_1 .VVV_1 {
+  font-size: 30rpx;
+}
+.vacation .Vtop .Vtop_2 {
+  display: flex;
+}
+.vacation .Vtop .Vtop_2 view {
+  width: 14.28%;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #ffffff;
+}
+.vacation .VBB .VBB_1 {
+  height: 29rpx;
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  margin-top: 40rpx;
+}
+.vacation .VBB .VBB_2 {
+  display: flex;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+.vacation .VBB .VBB_2 view {
+  height: 30rpx;
+  width: 30rpx;
+}
+.vacation .VBB .VBB_2 text {
+  line-height: 1;
+}
+.vacation .VBB .VBB_t {
+  margin-top: 30rpx;
+  width: 750rpx;
+}
+.vacation .VBB .VBB_t .vv_1 {
+  display: inline-block;
+  width: 205rpx;
+  height: 58rpx;
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #ff6d6d;
+  border-radius: 58rpx;
+  text-align: center;
+  line-height: 58rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+.vacation .VBB .VBB_b {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+}
+.vacation .VBB .VBB_b .vv_1 {
+  width: 205rpx;
+  height: 58rpx;
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #ff6d6d;
+  border-radius: 58rpx;
+  text-align: center;
+  line-height: 58rpx;
+}
+.iSS {
+  width: 50rpx;
+  height: 50rpx;
+  background-color: greenyellow;
+}
+.ML {
+  background-color: #999999 !important;
+}
+.AABB {
+  font-size: 50rpx;
+}

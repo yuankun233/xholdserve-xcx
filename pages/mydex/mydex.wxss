@@ -1,0 +1,180 @@
+.mydex .mydex_top {
+  width: 750rpx;
+  height: 267rpx;
+  background-color: #ff6d6d;
+  position: relative;
+}
+.mydex .mydex_top .mydex_top_1 {
+  width: 581rpx;
+  height: 272rpx;
+  background: #ffffff;
+  border-radius: 20rpx;
+  position: absolute;
+  left: 85rpx;
+  top: 119rpx;
+  z-index: 1;
+  -webkit-box-shadow: 0px 10px 13px 0px rgba(255, 245, 245, 0.62);
+  -moz-box-shadow: 0px 10px 13px 0px rgba(255, 245, 245, 0.62);
+  box-shadow: 0px 10px 13px 0px rgba(255, 245, 245, 0.62);
+}
+.mydex .mydex_top .mydex_top_1 .image_1 {
+  width: 163rpx;
+  height: 162rpx;
+  border-radius: 100rpx;
+  position: absolute;
+  top: -57rpx;
+  left: 208rpx;
+}
+.mydex .mydex_top .mydex_top_1 .mydex_top_1_user {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 134rpx;
+  display: flex;
+}
+.mydex .mydex_top .mydex_top_1 .mydex_top_1_user view {
+  font-size: 32rpx;
+  color: #343434;
+}
+.mydex .mydex_top .mydex_top_1 .mydex_top_1_user image {
+  width: 27rpx;
+  height: 27rpx;
+  margin-left: 8rpx;
+  margin-top: 11rpx;
+}
+.mydex .mydex_top .mydex_top_1_sex {
+  display: flex;
+  position: absolute;
+  bottom: 47rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 28rpx;
+  color: #333333;
+}
+.mydex .mydex_top .mydex_top_1_sex view {
+  margin-left: 19rpx;
+  margin-right: 19rpx;
+}
+.mydex .mydex_max {
+  height: 330rpx;
+  width: 750rpx;
+  position: relative;
+}
+.mydex .mydex_max .mydex_max_1 {
+  width: 630rpx;
+  height: 90rpx;
+  background: #fff5f5;
+  border-radius: 45rpx;
+  position: absolute;
+  bottom: 34rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mydex .mydex_max .mydex_max_1 .mydex_max_1_rx {
+  font-size: 32rpx;
+  color: #666666;
+  line-height: 90rpx;
+  text-indent: 26rpx;
+}
+.mydex .mydex_max .mydex_max_1 .mydex_max_1_rd {
+  width: 124rpx;
+  height: 124rpx;
+  line-height: 124rpx;
+  text-align: center;
+  background: #ffffff;
+  border: 10rpx solid #ff6d6d;
+  border-radius: 50%;
+  position: absolute;
+  right: 45rpx;
+  top: -17rpx;
+}
+.mydex .mydex_hurdle {
+  display: flex;
+  justify-content: space-between;
+  width: 750rpx;
+  height: 88rpx;
+  border-bottom: 1px solid #f5f5f5;
+  background-color: #ffffff;
+}
+.mydex .mydex_hurdle .mydex_hurdle_l {
+  font-size: 32rpx;
+  color: #333333;
+  text-indent: 69rpx;
+  line-height: 88rpx;
+  width: 100%;
+}
+.mydex .mydex_hurdle .mydex_hurdle_r {
+  line-height: 88rpx;
+  margin-right: 72rpx;
+  color: #f5f5f5;
+}
+.mydex .mydex_over {
+  width: 642rpx;
+  height: 82rpx;
+  background: #ff6d6d;
+  border-radius: 10rpx;
+  color: #ffffff;
+  font-size: 34rpx;
+  margin: 0 auto;
+  margin-top: 131rpx;
+  text-align: center;
+  line-height: 82rpx;
+}
+.mydex .mydexZZ {
+  height: 160rpx;
+  margin-top: 16rpx;
+  margin-bottom: 16rpx;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100rpx;
+  padding-right: 100rpx;
+  padding-top: 25rpx;
+}
+.GYWM {
+  background-color: #ffffff;
+  width: 624rpx;
+  height: 1103rpx;
+  position: absolute;
+  z-index: 3;
+  top: 57rpx;
+  left: 50%;
+  border-radius: 10rpx;
+  transform: translateX(-50%);
+}
+.GYWM image {
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  top: 16rpx;
+  right: 21rpx;
+}
+.GYWM .GYWM_1 {
+  width: 170rpx;
+  height: 34rpx;
+  font-size: 36rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  margin: 0 auto;
+  margin-top: 28rpx;
+}
+.GYWM .GYWM_2 {
+  width: 547rpx;
+  height: 915rpx;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  line-height: 52rpx;
+  margin: 0 auto;
+  margin-top: 28rpx;
+}
+.ALL {
+  width: 750rpx;
+  height: 1639rpx;
+  background: #000000;
+  opacity: 0.5;
+  position: fixed;
+  left: 0;
+  top: 0;
+}

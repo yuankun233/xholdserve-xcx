@@ -1,0 +1,88 @@
+<!--pages/vacation/vacation.wxml-->
+<view class="vacation">
+	<view class="Vtop">
+		<view class="title">空闲时间</view>
+		<!-- <view class="title_2">编辑</view> -->
+		<view class="Vtop_1">
+			<view class="Vtop_1_1">
+				<view>
+					一
+				</view>
+			</view>
+			<view class="Vtop_1_1">
+				<view>
+					二
+				</view>
+			</view>
+			<view class="Vtop_1_1">
+				<view>
+					三
+				</view>
+			</view>
+			<view class="Vtop_1_1">
+				<view>
+					四
+				</view>
+			</view>
+			<view class="Vtop_1_1">
+				<view>
+					五
+				</view>
+			</view>
+			<view class="Vtop_1_1">
+				<view>
+					六
+				</view>
+			</view>
+			<view class="Vtop_1_1">
+				<view>
+					日
+				</view>
+			</view>
+		</view>
+		<view class="Vtop_2">
+			<view bindtap="XZrq" data-Index_1="{{index}}" class="{{index==day?'iSS':''}}" wx:for="{{list}}">{{item}}</view>
+		</view>
+	</view>
+	<!-- <view class="VBB">
+		<view class="VBB_1">请您编辑当天时间段</view>
+		<view class="VBB_2">
+			<view style="background-color:#ff6d6d"></view>
+			<text>空闲</text>
+			<view style="background-color:#999999"></view>
+			<text>忙碌</text>
+		</view>
+		<view class="VBB_t">
+			<view data-LB="A" bindtap="XZsjd" class="vv_1 {{A=='1'?'ML':''}}" style="margin-left:30rpx">00:00-04:00</view>
+			<view data-LB="B" bindtap="XZsjd" class="vv_1 {{B=='1'?'ML':''}}">05:00-08:00</view>
+			<view data-LB="C" bindtap="XZsjd" class="vv_1 {{C=='1'?'ML':''}}" style="margin-right:30rpx">09:00-12:00</view>
+		</view>
+		<view class="VBB_b">
+			<view data-LB="D" bindtap="XZsjd" class="vv_1 {{D=='1'?'ML':''}}" style="margin-left:30rpx">13:00-16:00</view>
+			<view data-LB="E" bindtap="XZsjd" class="vv_1 {{E=='1'?'ML':''}}">17:00-20:00</view>
+			<view data-LB="F" bindtap="XZsjd" class="vv_1 {{F=='1'?'ML':''}}" style="margin-right:30rpx">21:00-04:00</view>
+		</view>
+	</view> -->
+	<view class="VBB">
+		<view wx:if="{{timeD!==''}}" class="VBB_1">您当天排班时间段</view>
+		<!-- <view class="VBB_2">
+			<view style="background-color:#ff6d6d"></view>
+			<text>空闲</text>
+			<view style="background-color:#999999"></view>
+			<text>忙碌</text>
+		</view> -->
+		<view class="VBB_t" style="padding-left:30rpx;padding-right:30rpx">
+			<!-- <view data-LB="A" class="vv_1 {{A=='1'?'ML':''}}">05:00-05:30</view> -->
+			<view wx:if="{{timeD==''}}" class="AABB">当天暂无排班安排</view>
+			<view wx:for="{{timeD}}" class="vv_1 {{B=='1'?'ML':''}}">{{item.creattime}}</view>
+			<!-- <view data-LB="C" class="vv_1 {{C=='1'?'ML':''}}">09:00-12:00</view>
+			<view data-LB="C" class="vv_1 {{C=='1'?'ML':''}}">09:00-12:00</view>
+			<view data-LB="C" class="vv_1 {{C=='1'?'ML':''}}">09:00-12:00</view>
+			<view data-LB="C" class="vv_1 {{C=='1'?'ML':''}}">09:00-12:0	0</view>
+			<view data-LB="C" class="vv_1 {{C=='1'?'ML':''}}">09:00-12:00</view>
+			<view data-LB="C" class="vv_1 {{C=='1'?'ML':''}}">09:00-12:00</view>
+			<view data-LB="C" class="vv_1 {{C=='1'?'ML':''}}">09:00-12:00</view> -->
+		</view>
+	</view>
+</view>
+<!-- <view class="TIME" wx:for="{{list}}" bindtap="TimeMM" data-RR="{{item}}">{{item}}</view> -->

@@ -1,0 +1,83 @@
+<!--pages/sendOrders/sendOrders.wxml-->
+<view class="mydex_top">
+	<view class="mydex_top_2">
+		<picker bindchange="bindPickerChange" value="{{index}}" range="{{hlz1Array}}">
+			<view class="picker">
+				请选择护理站：{{hlz1Array[index]}}
+				<text class="iconfont icon-xia"></text>
+			</view>
+		</picker>
+	</view>
+	<view class="mydex_top_1" catchtap="clickStart" data-start="1">
+		<view class="mydex_top_1_l">
+			<image wx:if="{{start=='1'}}" style="width:57rpx;height:59rpx" src="../../image/b11.png"></image>
+			<image wx:if="{{start!=='1'}}" style="width:57rpx;height:59rpx" src="../../image/b22.png"></image>
+			<view>待派单</view>
+		</view>
+		<view class="mydex_top_1_Z" catchtap="clickStart" data-start="2">
+			<image wx:if="{{start=='2'}}" style="width:60rpx;height:56rpx" src="../../image/f11.png"></image>
+			<image wx:if="{{start!=='2'}}" style="width:60rpx;height:56rpx" src="../../image/f22.png"></image>
+			<view>正在进行</view>
+		</view>
+		<view class="mydex_top_1_r" catchtap="clickStart" data-start="3">
+			<image wx:if="{{start=='3'}}" style="width:45rpx;height:53rpx" src="../../image/d11.png"></image>
+			<image wx:if="{{start!=='3'}}" style="width:45rpx;height:53rpx" src="../../image/d22.png"></image>
+			<view>全部订单</view>
+		</view>
+	</view>
+</view>
+<!-- 派单 -->
+<view wx:if="{{start=='1'}}">
+	<view wx:for="{{info}}" class="sendOrders">
+		<view class="sendOrders_t">
+			<view style="margin-left:23rpx">订单号:{{item.out_trade_no}}</view>
+			<view>下单时间:{{item.create_time}}</view>
+		</view>
+		<view class="sendOrders_All_1">
+			<view class="sendOrders_All">姓名: {{item.archive}}</view>
+			<view wx:if="{{item.sex=='2'}}" class="sendOrders_All">性别: 女</view>
+			<view wx:if="{{item.sex=='1'}}" class="sendOrders_All">性别: 男</view>
+			<view class="sendOrders_All">时间: {{item.service_text}}</view>
+			<view class="sendOrders_All">联系电话: {{item.phone}}</view>
+			<view class="sendOrders_All">备注:{{item.content}}</view>
+		</view>
+		<view class="PAIDAN_22" bindtap="order_out" data-OrderID1="{{item.id}}">转出</view>
+		<view class="PAIDAN" bindtap="assign" data-OrderID="{{item.id}}">派单</view>
+	</view>
+</view>
+<!-- 进行中 -->
+<view wx:if="{{start=='2'}}">
+	<view wx:for="{{info}}" class="sendOrders">
+		<view class="sendOrders_t">
+			<view style="margin-left:23rpx">订单号:{{item.out_trade_no}}</view>
+			<view>下单时间:{{item.create_time}}</view>
+		</view>
+		<view class="sendOrders_All_1">
+			<view class="sendOrders_All">姓名: {{item.archive}}</view>
+			<view wx:if="{{item.sex=='2'}}" class="sendOrders_All">性别: 女</view>
+			<view wx:if="{{item.sex=='1'}}" class="sendOrders_All">性别: 男</view>
+			<view class="sendOrders_All">时间: {{item.service_text}}</view>
+			<view class="sendOrders_All">联系电话: {{item.phone}}</view>
+			<view class="sendOrders_All">护理员:{{item.attend_name}}</view>
+		</view>
+		<view class="PAIDAN" bindtap="PAIDAN" data-did="{{item.id}}">操作</view>
+	</view>
+</view>
+<!-- 全部 -->
+<view wx:if="{{start=='3'}}">
+	<view wx:for="{{info}}" class="sendOrders">
+		<view class="sendOrders_t">
+			<view style="margin-left:23rpx">订单号:{{item.out_trade_no}}</view>
+			<view>下单时间:{{item.create_time}}</view>
+		</view>
+		<view class="sendOrders_All_1">
+			<view class="sendOrders_All">姓名: {{item.archive}}</view>
+			<view wx:if="{{item.sex=='2'}}" class="sendOrders_All">性别: 女</view>
+			<view wx:if="{{item.sex=='1'}}" class="sendOrders_All">性别: 男</view>
+			<view class="sendOrders_All">时间: {{item.service_text}}</view>
+			<view class="sendOrders_All">联系电话: {{item.phone}}</view>
+			<view class="sendOrders_All">护理员:{{item.attend_name}}</view>
+		</view>
+		<view class="PAIDAN_1">{{item.status_text}}</view>
+	</view>
+</view>

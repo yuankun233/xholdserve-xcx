@@ -1,0 +1,77 @@
+<!--pages/audit_1/audit_1.wxml-->
+<view class="modification">
+	<view class="modification_max">
+		<view class="mydex_hurdle">
+			<view class="mydex_hurdle_l">
+				姓名 :
+			</view>
+			<view>{{info.name}}</view>
+		</view>
+	</view>
+	<view class="modification_max">
+		<view class="mydex_hurdle">
+			<view class="mydex_hurdle_l">
+				性别
+			</view>
+			<view wx:if="{{info.sex=='1'}}">男</view>
+			<view wx:if="{{info.sex=='2'}}">女</view>
+		</view>
+	</view>
+	<view class="modification_max">
+		<view class="mydex_hurdle">
+			<view class="mydex_hurdle_l">
+				年龄
+			</view>
+			<view>{{info.age}}</view>
+		</view>
+	</view>
+	<view class="modification_max">
+		<view class="mydex_hurdle">
+			<view class="mydex_hurdle_l">
+				电话
+			</view>
+			<view>{{info.phone}}</view>
+		</view>
+	</view>
+	<view class="modification_max">
+		<view class="mydex_hurdle">
+			<view class="mydex_hurdle_l">
+				地址
+			</view>
+			<view>{{info.address}}</view>
+		</view>
+	</view>
+	<view class="modification_max">
+		<view class="mydex_hurdle">
+			<view class="mydex_hurdle_l">
+				护理类别
+			</view>
+			<view wx:if="{{user.duid=='1'}}">护士</view>
+			<view wx:if="{{user.duid=='2'}}">医疗照护护理员</view>
+			<view wx:if="{{user.duid=='3'}}">养老护理员</view>
+			<view wx:if="{{user.duid=='4'}}">康复师</view>
+		</view>
+	</view>
+</view>
+<view class="attestation">
+	<view class="attestation_3">
+		<view class="attestation_2_Z" bindtap="upSFZZ">
+			<image src="{{info.identityid}}"></image>
+			<view>身份证正面</view>
+		</view>
+		<view class="attestation_2_F" bindtap="upSFZF">
+			<image src="{{info.identityid_side}}"></image>
+			<view>身份证反面</view>
+		</view>
+	</view>
+	<view class="attestation_3" style="margin-top:27rpx" bindtap="upZZJ">
+		<view class="attestation_2_Z">
+			<image src="{{info.kangfushi_certificatel}}"></image>
+			<view>相关资格证</view>
+		</view>
+	</view>
+</view>
+<view class="buttom">
+	<view class="buttom_l" bindtap="buttom_F">拒绝</view>
+	<view class="buttom_r" bindtap="buttom_T">同意</view>
+</view>

@@ -1,0 +1,30 @@
+<!--pages/home/login/login.wxml-->
+<!-- 导航 -->
+<view class="login">
+	<image src="../../image/wjmm.png" style="width:750rpx;height:300rpx;"></image>
+</view>
+
+<!-- 注册 -->
+<view class="group1">
+	<view class="group1_1">
+		<input class="input1" value="{{phone}}" bindinput="verifyPhone" placeholder="请输入手机号"></input>
+	</view>
+
+	<!-- 验证码验证 -->
+	<movable-area class="content" style="width:{{area_width}}%">
+		拖动滑块验证
+		<movable-view class='box' style='width:{{box_width}}rpx' friction="{{100}}" direction="horizontal" x="{{x}}" damping="{{500}}" bindchange="drag" bindtouchend="dragOver">
+			<view class='movable-icon'></view>
+		</movable-view>
+	</movable-area>
+	<view class="group1_1">
+		<input class="input1" value="{{invite}}" bindinput="verifyInvite" placeholder="请输入新密码密码"></input>
+	</view>
+	<view class="group1_2">
+		<input class="input2" value="{{code}}" bindinput="verifyCode" placeholder="你收到的验证码"></input>
+		<view class="code" bindtap="getCode">{{time}}{{title}}</view>
+	</view>
+
+	<view class="group1_3 " bindtap="xiugai" style="pointer-events:{{none}};">确认修改</view>
+
+</view>

@@ -1,0 +1,46 @@
+<!--pages/blood/blood.wxml-->
+<scroll-view scroll-x class="bg-white nav">
+  <view class="flex text-center">
+    <view class="cu-item flex-sub {{index==TabCur?'AA':''}}" wx:for="{{tab}}" wx:key bindtap="tabSelect"
+      data-id="{{index}}">
+      {{item}}
+      <view class="{{index==TabCur?'BB':''}}">
+      </view>
+    </view>
+  </view>
+</scroll-view>
+<!-- 订单列表 -->
+<view wx:for="{{orderList}}" class="blood" bindtap="goItem" data-id="{{item.id}}" data-start="{{item.status}}" data-orderid="{{item.orderId}}">
+    <image src="../../image/caixue.png" class="b_img_1"></image>
+    <image src="../../image/dd.png" class="b_img_2"></image>
+    <image src="../../image/rr.png" class="b_img_3"></image>
+    <view class="blood_x"></view>
+    <view class="blood_x xx"></view>
+    <view class="blood_1">上门静脉采血</view>
+    <!-- 名字 -->
+    <view class="blood_2">{{item.appointInfo.userName}}</view>
+    <!-- 地址 -->
+    <view class="blood_3">{{item.appointInfo.district}}{{item.appointInfo.address}}</view>
+    <!-- 状态 -->
+    <!-- <view class="blood_4">待服务</view> -->
+    <view wx:if="{{item.status=='3201'}}" class="blood_4">待服务</view>
+    <view wx:if="{{item.status=='3301'}}" class="blood_4">待服务</view>
+    <view wx:if="{{item.status=='3331'}}" class="blood_4">服务中</view>
+    <view wx:if="{{item.status=='3430'}}" class="blood_4">服务中</view>
+    <view wx:if="{{item.status=='3903'}}" class="blood_4">已完成</view>
+    <view class="blood_5">所需耗材：<text wx:for="{{item.serviceInfo.materialList}}">{{item.materialName}},</text>
+    </view>
+    <!-- 等待上门 -->
+    <view wx:if="{{item.status=='3201'}}" class="blood_6">等待上门</view>
+    <view wx:if="{{item.status=='3301'}}" class="blood_6">已出发</view>
+    <view wx:if="{{item.status=='3331'}}" class="blood_6">已出发</view>
+    <view wx:if="{{item.status=='3430'}}" class="blood_6">已出发</view>
+    <view wx:if="{{item.status=='3903'}}" class="blood_6">已完成</view>
+    <!-- <view class="blood_6">正在采样</view>
+  <view class="blood_6">交接完成</view> -->
+    <view wx:if="{{item.status=='3201'}}" class="blood_7" catchtap="startFn" data-start="3301" data-id="{{item.orderId}}">现在出发</view>
+    <view wx:if="{{item.status=='3301'}}" class="blood_7" catchtap="startFn" data-start="3331" data-id="{{item.orderId}}">我已到达</view>
+
+    <view wx:if="{{item.status=='3331'}}" class="blood_7" catchtap="startFn" data-start="3430" data-id="{{item.orderId}}">采样完成</view>
+    <view wx:if="{{item.status=='3430'}}" class="blood_7">上传</view>
+</view>

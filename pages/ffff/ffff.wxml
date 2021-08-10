@@ -1,0 +1,19 @@
+<!--pages/ffff/ffff.wxml-->
+<view>
+    <view class="wen">
+        <view class="wen_box">
+          <text>问题/意见描述</text>
+          <text class="shu">0/200</text>
+        </view>
+          <textarea class="weui-input" maxlength="150" placeholder="请填写10字以上的问题描述，更方便的帮助您"/>
+        <!-- <view>
+              <view class="shang">
+                <view class="shu1"></view>
+                <view class="heng"></view> 
+              </view>
+        </view> -->
+    </view>
+       <view class="group1_3" bindtap="submit">提交</view>
+       <!-- <view class="group1_3" bindtap="min">录音</view>
+       <view class="group1_3" bindtap="min2">暂停</view> -->
+</view>

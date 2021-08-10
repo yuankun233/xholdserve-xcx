@@ -1,0 +1,115 @@
+.particulars {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  padding-top: 61rpx;
+}
+.particulars .particulars_top {
+  position: relative;
+  margin-left: 30rpx;
+}
+.particulars .particulars_top image {
+  position: absolute;
+  width: 112rpx;
+  height: 112rpx;
+  top: 0rpx;
+  right: 73rpx;
+}
+.particulars .particulars_top .particulars_top_1 {
+  display: flex;
+  color: #333333;
+  font-size: 32rpx;
+}
+.particulars .particulars_top .particulars_top_2 {
+  display: flex;
+  color: #333333;
+  margin-top: 36rpx;
+  font-size: 32rpx;
+}
+.particulars .particulars_top .particulars_top_3 {
+  display: flex;
+  color: #333333;
+  margin-top: 36rpx;
+  font-size: 32rpx;
+}
+.particulars .particulars_map {
+  width: 690rpx;
+  height: 250rpx;
+  margin: 0 auto;
+  margin-top: 17rpx;
+  overflow: hidden;
+  border: 1px solid #999999;
+}
+.particulars .particulars_map map {
+  width: 100%;
+  height: 100%;
+}
+.particulars .particulars_day {
+  font-size: 32rpx;
+  margin-left: 30rpx;
+  margin-top: 36rpx;
+}
+.particulars .particulars_day .particulars_day_1 {
+  display: flex;
+}
+.particulars .particulars_day .particulars_day_2 {
+  display: flex;
+  margin-top: 37rpx;
+}
+.particulars .particulars_day .particulars_day_2 image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 100rpx;
+}
+.particulars .particulars_day .particulars_day_3 {
+  display: flex;
+  margin-top: 35rpx;
+}
+.particulars .particulars_day .particulars_day_4 {
+  margin-top: 36rpx;
+}
+.particulars .particulars_day .particulars_day_4 .particulars_day_4_t {
+  width: 690rpx;
+  height: 170rpx;
+  border: 1px solid #999999;
+  border-radius: 10rpx;
+  overflow: hidden;
+  margin-top: 16rpx;
+  background-color: #e5e5e5;
+}
+.particulars .particulars_day .particulars_day_5 {
+  height: 300rpx;
+  display: flex;
+  text-align: center;
+  line-height: 60rpx;
+  color: #ffffff;
+  margin-top: 40rpx;
+}
+.particulars .particulars_day .particulars_day_5 .particulars_day_5_l {
+  width: 280rpx;
+  height: 66rpx;
+  background: #ff6e6e;
+  border-radius: 30rpx;
+  margin-left: 26rpx;
+}
+.particulars .particulars_day .particulars_day_5 .particulars_day_5_r {
+  width: 280rpx;
+  height: 66rpx;
+  background: #9a9a9a;
+  border-radius: 30rpx;
+  margin-left: 82rpx;
+}
+.RLL {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  z-index: 9999;
+}
+.RLL image {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 10rpx;
+  top: -50rpx;
+}

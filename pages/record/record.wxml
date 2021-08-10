@@ -1,0 +1,6 @@
+<!--pages/record/record.wxml-->
+<view>
+	<image mode="widthFix" src="../../image/123123123.png"></image>
+  <view bindtap="FZ">点击下方复制链接</view>
+	<text>https://www.xiaohulaile.com/luyinhtml/QuickStart.html</text>
+</view>

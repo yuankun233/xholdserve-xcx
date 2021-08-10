@@ -1,0 +1,31 @@
+<!--pages/order_out/order_out.wxml-->
+<!--pages/pppp/pppp.wxml-->
+<view class="ceng">
+	<!-- 曾服务护理员 -->
+	<!-- <view class="ceng_box">
+        <text class="ceng_box_text">曾服务护理员</text>
+  </view> -->
+	<!-- 信息 -->
+	<view wx:for="{{info}}" class="xinxi">
+		<text class="xinxi_text">订单编号:{{item.out_trade_no}}</text>
+		<view class="xinxi_box">
+			<view>姓名：{{item.archive}}</view>
+			<view>年龄：{{item.age}}岁</view>
+			<view>联系电话:{{item.phone}}</view>
+			<view>服务时间：{{item.service_text}}</view>
+			<view>服务地址：{{item.address}}</view>
+		</view>
+		<view type="primary" bindtap="paiDan" data-DDid="{{item.id}}" class="button">接单</view>
+	</view>
+	<!-- <view class="xinxi">
+		<text class="xinxi_text">注册日期:2020-08-24 10:46</text>
+		<view class="xinxi_box">
+			<view>姓名：陈美美</view>
+			<view>性别：女</view>
+			<view>年龄：35岁</view>
+			<view>联系电话:15618213242</view>
+			<view>护理类别：康复训练</view>
+		</view>
+		<view type="primary" bindtap="modalinput" class="button">派单</view>
+	</view> -->
+</view>

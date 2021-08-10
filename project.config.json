@@ -1,0 +1,227 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.12.2",
+  "appid": "wx215bd044305d4fa9",
+  "projectname": "%E6%97%A7%E7%89%88%E6%8A%A4%E7%90%86%E5%91%98%E7%AB%AF",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "isGameTourist": false,
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "currentL": -1,
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/mydex/mydex",
+          "pathName": "pages/mydex/mydex",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/particulars/particulars",
+          "pathName": "pages/particulars/particulars",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/wwww/wwww",
+          "pathName": "pages/wwww/wwww",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/attestation/attestation",
+          "pathName": "pages/attestation/attestation",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/modification/modification",
+          "pathName": "pages/modification/modification",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/sendOrders/sendOrders",
+          "pathName": "pages/sendOrders/sendOrders",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/pppp/pppp",
+          "pathName": "pages/pppp/pppp",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/audit/audit",
+          "pathName": "pages/audit/audit",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/audit_1/audit_1",
+          "pathName": "pages/audit_1/audit_1",
+          "query": "id=155",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/zzzz/zzzz",
+          "pathName": "pages/zzzz/zzzz",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 12,
+          "name": "pages/transfer/transfer",
+          "pathName": "pages/transfer/transfer",
+          "query": "id=1001",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/order_out/order_out",
+          "pathName": "pages/order_out/order_out",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/ffff/ffff",
+          "pathName": "pages/ffff/ffff",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 15,
+          "name": "pages/cheshi1111/cheshi111",
+          "pathName": "pages/cheshi1111/cheshi111",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/course/course",
+          "pathName": "pages/course/course",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/particulars/particulars",
+          "pathName": "pages/particulars/particulars",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/vacation/vacation",
+          "pathName": "pages/vacation/vacation",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "\"pages/AllCourse/AllCourse\"",
+          "pathName": "pages/AllCourse/AllCourse",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/CourseDetails/CourseDetails",
+          "pathName": "pages/CourseDetails/CourseDetails",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/nfc/nfc",
+          "pathName": "pages/nfc/nfc",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

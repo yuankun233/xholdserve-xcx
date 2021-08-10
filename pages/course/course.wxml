@@ -1,0 +1,59 @@
+<!--pages/course/course.wxml-->
+<!-- <web-view src="https://www.xiaohulaile.cn/QuickStartapp.html"></web-view> -->
+<view class="course">
+	<!-- 精选套餐 -->
+	<view class="course_1">
+		<view class="course_1_t">
+			<view class="course_1_t_aa">
+				<view></view>
+				<text>精选套餐</text>
+			</view>
+			<view class="course_1_t_bb" bindtap="courseGAll">
+				查看全部
+			</view>
+		</view>
+		<view class="course_1_b">
+			<view class="item">1</view>
+			<view class="item">2</view>
+			<view class="item">3</view>
+			<view class="item">4</view>
+			<view class="item">5</view>
+			<view class="item">6</view>
+			<view class="item">7</view>
+			<view class="item">8</view>
+			<view class="item">9</view>
+			<view class="item">X</view>
+			<view class="item">XI</view>
+			<view class="item">XI</view>
+			<view class="item">XI</view>
+			<view class="item">XI</view>
+			<view class="item">XI</view>
+			<view class="item">XI</view>
+			<view class="item">XI</view>
+		</view>
+	</view>
+	<!-- 单向课程 -->
+	<view class="course_2">
+		<view class="course_2_t">
+			<view></view>
+			<text>单项课程</text>
+		</view>
+		<view class="course_2_b">
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+			<view></view>
+		</view>
+	</view>
+</view>

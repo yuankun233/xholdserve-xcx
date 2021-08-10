@@ -1,0 +1,70 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/fill/Fill",
+    "pages/userAgreement/userAgreement",
+    "pages/index/index",
+    "pages/mydex/mydex",
+    "pages/particulars/particulars",
+    "pages/attestation/attestation",
+    "pages/wwww/wwww",
+    "pages/zzzz/zzzz",
+    "pages/pppp/pppp",
+    "pages/ffff/ffff",
+    "pages/sendOrders/sendOrders",
+    "pages/modification/modification",
+    "pages/audit/audit",
+    "pages/audit_1/audit_1",
+    "pages/transfer/transfer",
+    "pages/order_out/order_out",
+    "pages/course/course",
+    "pages/cheshi1111/cheshi111",
+    "pages/vacation/vacation",
+    "pages/record/record",
+    "pages/AllCourse/AllCourse",
+    "pages/CourseDetails/CourseDetails",
+    "pages/cheshi/111",
+    "pages/blood/blood",
+    "pages/blood/bloodItem/bloodItem",
+    "pages/blood/bloodUp/bloodUp"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "usingComponents": {
+    "calendar": "/src/component/v2/index",
+    "van-button": "/dist/button/index",
+    "van-dialog": "/dist/dialog/index"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小护来了",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "backgroundColor": "#fafafa",
+    "borderStyle": "white",
+    "selectedColor": "#080808",
+    "color": "#A1A4AB",
+    "list": [
+
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/dingdan.png",
+        "selectedIconPath": "image/dingdanse.png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/mydex/mydex",
+        "iconPath": "image/wode.png",
+        "selectedIconPath": "image/wodese.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

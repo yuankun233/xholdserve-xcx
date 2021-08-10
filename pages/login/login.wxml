@@ -1,0 +1,18 @@
+<!--pages/login/login.wxml-->
+<view class="login">
+	<image mode="widthFix" class="login_logo" src="../../image/3f1351752ba0f222f254ff75e90b66b.png"></image>
+	<view class="login_form">
+		<input class="{{input_CS==1?'reed':''}}" placeholder="手机账号" bindinput="inputP" bindfocus="inputClick" bindblur="inputRk" data-id="1"></input>
+		<input class="{{input_CS==2?'reed':''}}" placeholder="密码" bindinput="inputPW" type="password" bindfocus="inputClick" bindblur="inputRk" data-id="2"></input>
+		<button bindtap="login_1"  style="pointer-events:{{none}};">登录</button>
+	</view>
+	<view class="passWord_box">
+		<view class="forget" bindtap="gozzzz">忘记密码</view>
+		<view>丨</view>
+		<view class="register" bindtap="goWwww">注册账号</view>
+	</view>
+  <view class="login_buttom">
+    <view>登录即代表您已阅读并同意</view>
+    <view bindtap="userAgreementC" style="color:#ff6d6d">《用户隐私协议》</view>
+  </view>
+</view>

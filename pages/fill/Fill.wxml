@@ -1,0 +1,2 @@
+<!--pages/fill/Fill.wxml-->
+<text>{{agreement}}</text>

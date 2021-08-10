@@ -1,0 +1,130 @@
+.index .index_top {
+  display: flex;
+}
+.index .index_top view {
+  width: 33.33%;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  color: #333333;
+  font-size: 32rpx;
+}
+.index .index_stay {
+  position: relative;
+  width: 690rpx;
+  height: 420rpx;
+  margin: 0 auto;
+  background-color: #ffffff;
+  margin-top: 24rpx;
+  -webkit-box-shadow: 0px 8px 15px 0px rgba(35, 27, 26, 0.2);
+  -moz-box-shadow: 0px 8px 15px 0px rgba(35, 27, 26, 0.2);
+  box-shadow: 0px 8px 15px 0px rgba(53, 40, 39, 0.2);
+  padding-top: 23rpx;
+}
+.index .index_stay .index_stay_top {
+  display: flex;
+  justify-content: space-between;
+}
+.index .index_stay .index_stay_top .index_stay_top_l {
+  margin-left: 32rpx;
+  color: #333333;
+  font-weight: 900;
+}
+.index .index_stay .index_stay_top .index_stay_top_r {
+  margin-right: 37rpx;
+  color: #ff6d6d;
+}
+.index .index_stay .index_stay_top .index_stay_top_r image {
+  width: 26rpx;
+  height: 24rpx;
+}
+.index .index_stay .index_stay_img_1 {
+  position: absolute;
+  width: 148rpx;
+  height: 148rpx;
+  left: 32rpx;
+  top: 144rpx;
+}
+.index .index_stay .index_stay_img_2 {
+  position: absolute;
+  width: 11rpx;
+  height: 191rpx;
+  top: 93rpx;
+  left: 196rpx;
+}
+.index .index_stay .index_stay_MM {
+  margin-left: 215rpx;
+  margin-top: 14rpx;
+}
+.index .index_stay .index_stay_MM .index_stay_MM_1 {
+  color: #666666;
+  font-size: 28rpx;
+}
+.index .index_stay .index_stay_MM .index_stay_MM_2 {
+  color: #666666;
+  font-size: 28rpx;
+  display: flex;
+}
+.index .index_stay .index_stay_MM .index_stay_MM_3 {
+  color: #666666;
+  font-size: 28rpx;
+  display: flex;
+}
+.index .index_stay .index_stay_MM .index_stay_MM_4 {
+  color: #666666;
+  font-size: 28rpx;
+  display: flex;
+}
+.index .index_stay .index_stay_button {
+  position: absolute;
+  width: 280rpx;
+  height: 64rpx;
+  background: #ff6d6d;
+  border-radius: 32rpx;
+  text-align: center;
+  line-height: 64rpx;
+  color: #ffffff;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 27rpx;
+}
+.index .index_stay .index_stay_button_1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 27rpx;
+  border-bottom: 1px solid #000000;
+  font-size: 28rpx;
+}
+.start_top {
+  border-bottom: solid 2px #ff6d6d;
+  font-size: 36rpx;
+  font-weight: 900;
+}
+.NList {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 350rpx;
+}
+.NList image {
+  width: 397rpx;
+  height: 278rpx;
+}
+.NList view {
+  color: #666666;
+  font-size: 36rpx;
+  text-align: center;
+}
+.PP {
+  background-color: #f2f6ff !important;
+}
+.DD {
+  background-color: #4680fe !important;
+}
+.AA_code {
+  position: absolute;
+  right: 32rpx;
+  bottom: 27rpx;
+  font-size: 23rpx;
+}

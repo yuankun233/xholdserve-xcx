@@ -1,0 +1,63 @@
+/* pages/order_out/order_out.wxss */
+/* pages/pppp/pppp.wxss */
+page{
+  background: #eee;
+}
+.ceng_box{
+  width:690rpx;
+  height:62.8rpx;
+  background:#fff;
+  margin:0 auto;
+  margin-top:20rpx;
+  border-radius: 10rpx;
+}
+.ceng_box .ceng_box_text{
+  font-size:28rpx;
+  line-height:62.8rpx;
+  padding-left:22rpx;
+  color:#333;
+}
+.xinxi{
+  width:688rpx;
+  height:318rpx;
+  background:#fff;
+  margin:0 auto;
+  margin-top:10rpx;
+  border-radius: 10rpx;
+  position:relative;
+}
+.xinxi .xinxi_text{
+  /* width:365rpx; */
+  height:26rpx;
+  display: block;
+  font-size:28rpx;
+  line-height:26rpx;
+  color:#999;
+  padding-left:20rpx;
+  padding-top: 10rpx;
+}
+.xinxi .xinxi_box{
+  height:203rpx;
+  background:#fff;
+  margin:20rpx 0 0 20rpx;
+
+}
+.xinxi .xinxi_box>view{
+  font-size:28rpx;
+}
+.xinxi .button{
+  width:111.2rpx;
+  height:49rpx;
+  background:#FF6D6D;
+  border-radius: 10rpx;
+  position:absolute;
+  bottom:43rpx;
+  right:20rpx;
+  text-align:center;
+  color:#fff;
+  font-size:28rpx;
+  line-height:49rpx;
+}
+.xinxi_box view{
+ margin-top: 10rpx;
+}

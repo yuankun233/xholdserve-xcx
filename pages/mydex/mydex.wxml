@@ -1,0 +1,107 @@
+<!--pages/mydex/mydex.wxml-->
+<view class="mydex">
+	<view class="mydex_top">
+		<view class="mydex_top_1">
+			<image class="image_1" src="{{user.pic_url}}"></image>
+			<view class="mydex_top_1_user">
+				<view>{{user.name}}</view>
+				<!-- <image src="../../image/bianji@2x.png" bindtap="modification"></image> -->
+			</view>
+			<view class="mydex_top_1_sex">
+				<view wx:if="{{user.sex==1}}">男</view>
+				<view wx:else>女</view>
+				<view>{{user.age}}岁</view>
+			</view>
+		</view>
+	</view>
+	<view class="mydex_max">
+		<view class="mydex_max_1">
+			<view class="mydex_max_1_rx">服务量统计</view>
+			<view class="mydex_max_1_rd">
+				{{user.services_num}}次
+			</view>
+		</view>
+	</view>
+	<!-- 站长版本 -->
+	<view class="mydexZZ" wx:if="{{info.admin=='1'}}">
+		<view bindtap="sendOrders">
+			<image style="width:57rpx;height:73rpx;" src="../../image/asd3.png"></image>
+			<view>派单</view>
+		</view>
+		<view bindtap="audit">
+			<image style="width:69rpx;height:73rpx;" src="../../image/asd2.png"></image>
+			<view>审核</view>
+		</view>
+		<view bindtap="Zorder">
+			<image style="width:82rpx;height:73rpx;" src="../../image/asd1.png"></image>
+			<view>转单</view>
+		</view>
+		<view bindtap="orderAll">
+			<image style="width:82rpx;height:73rpx;" src="../../image/asd1.png"></image>
+			<view>订单池</view>
+		</view>
+	</view>
+	<!-- 用户 -->
+	<view class="mydex_hurdle" bindtap="clickJDRZ">
+		<view class="mydex_hurdle_l">
+			接单认证(<text style="color:#FF6D6D;">{{user.status_text}}</text>)
+		</view>
+		<!-- <view class="mydex_hurdle_r">></view> -->
+	</view>
+	<view class="mydex_hurdle" bindtap="xuazeFF">
+		<view class="mydex_hurdle_l">
+			工作计划表
+		</view>
+		<!-- <view class="mydex_hurdle_r">></view> -->
+	</view>
+	<view class="mydex_hurdle" bindtap="xuazeLYGJ">
+		<view class="mydex_hurdle_l">
+			录音工具
+		</view>
+		<!-- <view class="mydex_hurdle_r">></view> -->
+	</view>
+	<view class="mydex_hurdle" bindtap="opinion">
+		<view class="mydex_hurdle_l">
+			意见反馈
+		</view>
+	</view>
+	<!-- <view class="mydex_hurdle" bindtap="random" wx:if="{{num=='0'}}">
+		<view class="mydex_hurdle_l">
+			获取随机码
+		</view>
+	</view>
+	<view class="mydex_hurdle" wx:else>
+		<view class="mydex_hurdle_l">
+			随机码:{{num}}
+		</view>
+	</view> -->
+	<!-- <view class="mydex_hurdle">
+		<view class="mydex_hurdle_l">
+			设置
+		</view>
+		<view class="mydex_hurdle_r">></view>
+	</view> -->
+	<view class="mydex_hurdle" bindtap="GYWM">
+		<view class="mydex_hurdle_l">
+			关于我们
+		</view>
+		<!-- <view class="mydex_hurdle_r">></view> -->
+	</view>
+	<!-- 退出 -->
+	<view class="mydex_over" bindtap="xh_out">
+		退出登录
+	</view>
+</view>
+<view wx:if="{{start}}">
+	<view class="ALL">
+	</view>
+	<view class="GYWM">
+		<image src="../../image/XXXX.png" bindtap="GYWMX"></image>
+		<view class="GYWM_1">
+			关于我们
+		</view>
+		<view class="GYWM_2">
+			为适应老龄化发展形势，落实国家深入推进医养结合发展的政策要求，满足失能半失能人群和老年人群日益增长的医疗护理服务需求，上海小护来了信息科技有限公司依托上海市长期照护研究所和上海交通大学开发了小护来了，致力打造“护理机构+服务人员+居家医护”的线上线下一体化医养结合大数据综合管理服务平台，再造“互联网+医养结合”绿色健康生态系统，一站式解决用户为老问题，为家庭、社会和国家排忧解难，助力和赋能护理人员的服务能力和水平，提升护理服务质量。小护来了与上海健康医学院附属卫生学校联合推出护理人员在线教育课程，并为护理机构的护理人员提供“护理人员职业技能鉴定考核培训”和“在职继续教育培训”等服务。
+		</view>
+	</view>
+</view>

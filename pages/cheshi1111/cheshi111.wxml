@@ -1,0 +1,4 @@
+<!--pages/cheshi1111/cheshi111.wxml-->
+<!-- <text>pages/cheshi1111/cheshi111.wxml</text> -->
+<calendar id="calendar"/>
+<view bindtap="doSometing">点我</view>

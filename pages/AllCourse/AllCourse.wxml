@@ -1,0 +1,13 @@
+<!--pages/AllCourse/AllCourse.wxml-->
+<view class="AllCourse">
+  <view bindtap="T_details"></view>
+  <view bindtap="T_details"></view>
+  <view bindtap="T_details"></view>
+  <view bindtap="T_details"></view>
+  <view bindtap="T_details"></view>
+  <view bindtap="T_details"></view>
+  <view bindtap="T_details"></view>
+  <view bindtap="T_details"></view>
+  <view bindtap="T_details"></view>
+  <view bindtap="T_details"></view>
+</view>

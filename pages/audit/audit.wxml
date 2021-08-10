@@ -1,0 +1,16 @@
+<!--pages/audit/audit.wxml-->
+<view wx:for="{{SHinfo}}" class="audit">
+	<view class="sendOrders_All_1">
+		<view class="sendOrders_All">姓名: {{item.name}}</view>
+		<view wx:if="{{item.sex=='2'}}" class="sendOrders_All">性别: 女</view>
+		<view  wx:if="{{item.sex=='1'}}"  class="sendOrders_All">性别: 男</view>
+		<view class="sendOrders_All">年龄: {{item.age}}</view>
+		<view class="sendOrders_All">是否在职: 在职</view>
+		<view wx:if="{{item.duid=='1'}}" class="sendOrders_All">护理类别:护士</view>
+		<view wx:if="{{item.duid=='2'}}" class="sendOrders_All">护理类别:医疗照护护理员</view>
+		<view wx:if="{{item.duid=='3'}}" class="sendOrders_All">护理类别:养老护理员</view>
+		<view wx:if="{{item.duid=='4'}}" class="sendOrders_All">护理类别:康复师</view>
+		<view class="sendOrders_All">电话:{{item.phone}}</view>
+	</view>
+	<view class="butt" bindtap="butt" data-id="{{item.id}}">详情</view>
+</view>

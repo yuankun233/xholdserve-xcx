@@ -1,0 +1,36 @@
+<!--pages/pppp/pppp.wxml-->
+<view class="ceng">
+	<!-- 曾服务护理员 -->
+	<!-- <view class="ceng_box">
+        <text class="ceng_box_text">曾服务护理员</text>
+  </view> -->
+	<!-- 信息 -->
+	<view wx:for="{{nurse}}" class="xinxi">
+		<text class="xinxi_text">注册日期:{{item.creattime}}</text>
+		<view class="xinxi_box">
+			<view>姓名：{{item.name}}</view>
+			<view>性别：女</view>
+			<view>年龄：{{item.age}}岁</view>
+			<view>联系电话:{{item.phone}}</view>
+			<view wx:if="{{item.duid=='1'}}">护理类别：护士</view>
+			<view wx:if="{{item.duid=='2'}}">护理类别：医疗照护护理员</view>
+			<view wx:if="{{item.duid=='3'}}">护理类别：养老护理员</view>
+			<view wx:if="{{item.duid=='4'}}">护理类别：康复师</view>
+		</view>
+		<view type="primary" bindtap="modalinput" data-HLYid="{{item.id}}" class="button">派单</view>
+	</view>
+	<!-- <view class="xinxi">
+		<text class="xinxi_text">注册日期:2020-08-24 10:46</text>
+		<view class="xinxi_box">
+			<view>姓名：陈美美</view>
+			<view>性别：女</view>
+			<view>年龄：35岁</view>
+			<view>联系电话:15618213242</view>
+			<view>护理类别：康复训练</view>
+		</view>
+		<view type="primary" bindtap="modalinput" class="button">派单</view>
+	</view> -->
+	<modal hidden="{{hiddenmodalput}}" title="护理计划" confirm-text="提交" bindcancel="cancel" bindconfirm="confirm">
+		<input type="number" bindinput="TextDay" placeholder="预计几天完成" auto-focus />
+	</modal>
+</view>

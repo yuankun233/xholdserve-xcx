@@ -1,0 +1,63 @@
+<!--pages/CourseDetails/CourseDetails.wxml-->
+<view class="CourseDetails">
+	<!-- 头部 -->
+	<view class="CourseDetails_1">
+
+	</view>
+	<!-- 尾部 -->
+	<view class="CourseDetails_2">
+		<view class="C-AA">
+			<view class="C-AA-1">
+				孕育早教会员
+			</view>
+			<view class="C-AA-2">
+				<view>高级孕婴师</view>
+				<view>蒙氏早教</view>
+			</view>
+			<view class="C-AA-3">
+				<view>实习课:¥3000</view>
+				<view>网课:¥300</view>
+			</view>
+			<view class="C-AA-4">
+				<view>实体包住</view>
+			</view>
+			<view class="C-AA-5">
+				<view class="a1">报班培训</view>
+				<view class="a2">17701769250</view>
+			</view>
+		</view>
+		<view class="C-BB">
+			<view class="C-BB-1 CC">
+				<view class="CC_1">课程时间:</view>
+				<view>七天</view>
+			</view>
+			<view class="C-BB-2 CC">
+				<view class="CC_1">课程班:</view>
+				<view>滚动班</view>
+			</view>
+			<view class="C-BB-3 CC">
+				<view class="CC_1">证书:</view>
+				<view>颁发结业证书</view>
+			</view>
+			<view class="C-BB-4 CC">
+				<view class="CC_1">培训班:</view>
+				<view>xxxxxxxxxxxxxx公司</view>
+			</view>
+			<view class="C-BB-5 CC">
+				<view class="CC_1">联系方式:</view>
+				<view>1832617823712378676</view>
+			</view>
+		</view>
+		<view class="C-CC">
+			<view>[服务保障]</view>
+			 <text>
+1、一对一顾问式全程跟进服务；
+2、严格的服务人员筛选机制
+3、根据雇主需求，严选匹配与之对应的有专业技能阿姨，根据标准，合理收费；
+4、专业培训技能理论知识和实操、持证上岗、提高服务人员素质、经验丰富、可随时预约；
+5、签订正规三方家政服务合同保障合法利益；
+6、严格的客户回访监督机制，在服务过程中不满意可免费更换阿姨；
+      </text>
+		</view>
+	</view>
+</view>

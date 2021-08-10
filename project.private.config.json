@@ -1,0 +1,196 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/mydex/mydex",
+          "pathName": "pages/mydex/mydex",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/particulars/particulars",
+          "pathName": "pages/particulars/particulars",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/wwww/wwww",
+          "pathName": "pages/wwww/wwww",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/attestation/attestation",
+          "pathName": "pages/attestation/attestation",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/modification/modification",
+          "pathName": "pages/modification/modification",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/sendOrders/sendOrders",
+          "pathName": "pages/sendOrders/sendOrders",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/pppp/pppp",
+          "pathName": "pages/pppp/pppp",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/audit/audit",
+          "pathName": "pages/audit/audit",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/audit_1/audit_1",
+          "pathName": "pages/audit_1/audit_1",
+          "query": "id=155",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/zzzz/zzzz",
+          "pathName": "pages/zzzz/zzzz",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 12,
+          "name": "pages/transfer/transfer",
+          "pathName": "pages/transfer/transfer",
+          "query": "id=1001",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/order_out/order_out",
+          "pathName": "pages/order_out/order_out",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/ffff/ffff",
+          "pathName": "pages/ffff/ffff",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 15,
+          "name": "pages/cheshi1111/cheshi111",
+          "pathName": "pages/cheshi1111/cheshi111",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/course/course",
+          "pathName": "pages/course/course",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/particulars/particulars",
+          "pathName": "pages/particulars/particulars",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/vacation/vacation",
+          "pathName": "pages/vacation/vacation",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "\"pages/AllCourse/AllCourse\"",
+          "pathName": "pages/AllCourse/AllCourse",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/CourseDetails/CourseDetails",
+          "pathName": "pages/CourseDetails/CourseDetails",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/nfc/nfc",
+          "pathName": "pages/nfc/nfc",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/blood/blood",
+          "pathName": "pages/blood/blood",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/blood/bloodItem/bloodItem",
+          "pathName": "pages/blood/bloodItem/bloodItem",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/blood/bloodUp/bloodUp",
+          "pathName": "pages/blood/bloodUp/bloodUp",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

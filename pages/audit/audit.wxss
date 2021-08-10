@@ -1,0 +1,34 @@
+page {
+  background-color: #f2f2f2;
+}
+.audit {
+  overflow: hidden;
+  width: 690rpx;
+  height: 310rpx;
+  background: #ffffff;
+  border-radius: 10rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  position: relative;
+}
+.audit .sendOrders_All_1 {
+  margin-top: 28rpx;
+}
+.audit .sendOrders_All_1 .sendOrders_All {
+  color: #333333;
+  font-size: 28rpx;
+  margin-left: 21rpx;
+  margin-top: 6rpx;
+}
+.audit .butt {
+  width: 111rpx;
+  height: 49rpx;
+  background: #ff6d6d;
+  border-radius: 6rpx;
+  text-align: center;
+  line-height: 49rpx;
+  color: #ffffff;
+  position: absolute;
+  bottom: 40rpx;
+  right: 40rpx;
+}

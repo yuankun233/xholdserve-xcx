@@ -1,0 +1,53 @@
+<!--pages/modification/modification.wxml-->
+<view class="modification">
+	<view class="modification_top">
+		<image src="../../image/icon_logo.png"></image>
+	</view>
+	<view class="modification_max">
+		<view class="mydex_hurdle">
+			<view class="mydex_hurdle_l">
+				姓名
+			</view>
+			<input  maxlength="7" placeholder="请输入"  bindinput="MMname"></input>
+		</view>
+	</view>
+	<view class="modification_max">
+		<view class="mydex_hurdle">
+			<view class="mydex_hurdle_l">
+				性别
+			</view>
+			<radio-group class="radio-group" bindchange="radioChange">
+				<label class="radio" wx:for="{{items}}">
+					<radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+				</label>
+			</radio-group>
+		</view>
+	</view>
+	<view class="modification_max">
+		<view class="mydex_hurdle">
+			<view class="mydex_hurdle_l">
+				年龄
+			</view>
+			<input maxlength="3" placeholder="请输入"  bindinput="MMage"></input>
+		</view>
+	</view>
+	<!-- <view class="modification_max">
+		<view class="mydex_hurdle">
+			<view class="mydex_hurdle_l">
+				电话
+			</view>
+			<input maxlength="11" placeholder="请输入"  bindinput="MMphone"></input>
+		</view>
+	</view> -->
+	<view class="modification_max">
+		<view class="mydex_hurdle">
+			<view class="mydex_hurdle_l">
+				地址
+			</view>
+			<input maxlength="50" placeholder="xx镇xxxxxx号" bindinput="MMaddress"></input>
+		</view>
+	</view>
+  <view class="buttom" bindtap="buttonUp">
+    提交修改个人信息
+  </view>
+</view>

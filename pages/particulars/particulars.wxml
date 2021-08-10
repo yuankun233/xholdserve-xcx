@@ -1,0 +1,68 @@
+<!--pages/particulars/particulars.wxml-->
+<view class="particulars">
+  <view class="particulars_top">
+    <view class="particulars_top_1">
+      <view style="font-weight:900">服务对象:</view>
+      <view style="color:#999999;margin-left:15rpx"> {{info.name}}</view>
+    </view>
+    <view class="particulars_top_2">
+      <view style="font-weight:900">服务项目:</view>
+      <view style="color:#999999;margin-left:15rpx"> {{info.title}}</view>
+    </view>
+    <view class="particulars_top_3">
+      <view style="font-weight:900">服务地址:</view>
+      <text style="color:#999999;margin-left:15rpx" user-select="true"> {{info.address}}</text>
+    </view>
+    <image src="{{info.pic_url}}"></image>
+  </view>
+  <!-- 地图 -->
+  <!-- <view class="particulars_map">
+		<map id="map" latitude="{{info.latitude}}" longitude="{{info.longitude}}" scale="13" show-location class="">
+		</map>
+	</view> -->
+  <!-- 服务时长 -->
+  <view class="particulars_day">
+    <view class="particulars_day_1">
+      <view style="font-weight:900">服务时长:</view>
+      <view style="color:#999999;margin-left:15rpx">{{info.length_service}}天</view>
+    </view>
+    <view class="particulars_day_2">
+      <view style="font-weight:900">服务时间:</view>
+      <view style="color:#999999;margin-left:15rpx">
+        <view>起: {{info.service_text}}</view>
+        <view>止: {{info.service_end}}</view>
+      </view>
+      <image bindtap="calendar" src="../../image/14141.png"></image>
+    </view>
+    <view class="particulars_day_3">
+      <view style="font-weight:900">订单号:</view>
+      <view style="color:#999999;margin-left:15rpx">{{info.out_trade_no}}</view>
+    </view>
+    <view class="particulars_day_4">
+      <view style="font-weight:900">备注:</view>
+      <view class="particulars_day_4_t">
+        {{info.content}}
+      </view>
+    </view>
+    <view class="particulars_day_5">
+      <view
+        class="particulars_day_5_l"
+        style="margin:0 auto"
+        wx:if="{{info.status!='3'}}"
+        bindtap="clickFinish"
+      >完成
+      </view>
+      <!-- <view
+        class="particulars_day_5_r"
+        wx:if="{{info.status!='3'}}"
+        bindtap="clickQC"
+      >签出
+      </view> -->
+    </view>
+  </view>
+</view>
+<view wx:if="{{isSHOW}}" class="RLL">
+  <image bindtap="XX" src="../../image/XXXX.png"></image>
+  <calendar id="calendar" />
+</view>
+

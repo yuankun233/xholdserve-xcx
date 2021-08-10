@@ -1,0 +1,52 @@
+.login .reed {
+  border: 1px solid #ff6d6d !important;
+}
+.login .login_logo {
+  width: 565rpx;
+  height: 300rpx !important;
+  margin: 0 auto;
+  display: block;
+  margin-top: 131rpx;
+}
+.login .login_form input {
+  margin: 0 auto;
+  width: 580rpx;
+  height: 100rpx;
+  border: 1px solid #eff0f5;
+  border-radius: 100px;
+  margin-top: 30.5px;
+  text-align: center;
+  font-size: 32rpx;
+}
+.login .login_form button {
+  font-size: 36rpx;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #eff0f5;
+  border-radius: 100px;
+  width: 580rpx;
+  height: 100rpx;
+  background-color: #f4e8ea;
+  margin-top: 121rpx;
+  line-height: 73rpx;
+  color: #333333;
+}
+.login .passWord_box {
+  display: flex;
+  justify-content: center;
+  margin-top: 27rpx;
+  color: #333333;
+}
+.login .passWord_box div {
+  font-size: 13rpx;
+  color: #aaafb6;
+  margin-right: 11.25rpx;
+  margin-left: 11.25rpx;
+}
+.login .login_buttom {
+  font-size: 26rpx;
+  color: #aaafb6;
+  margin-top: 98rpx;
+  display: flex;
+  justify-content: center;
+}

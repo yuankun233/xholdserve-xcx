@@ -1,0 +1,157 @@
+/* pages/home/login/login.wxss */
+page{
+  background: #fff;
+}
+.app-radio{
+  margin-top: 20rpx;
+}
+/* 导航 */
+.login{
+  width: 750rpx;
+	/* height: 400rpx; */
+	background-color: #ff6d6d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.title_box{
+  width: 750rpx;
+  height: 40rpx;
+  display: flex;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 40rpx;
+	letter-spacing: 2rpx;
+  color: #ffffff;
+ 
+}
+.title_box>view{
+  width: 375rpx;
+  height: 40rpx;
+  margin-left:180rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.select{
+  margin-top: 14rpx;
+  width: 750rpx;
+  display: flex;
+}
+.select>view{
+  width: 375rpx;
+  height: 25rpx;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.select>view>image{
+  width: 155rpx;
+	height: 100rpx;
+}
+/* 登陆 */
+.group1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 22rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 44rpx;
+	letter-spacing: 1rpx;
+  color: #444444;
+}
+/* 手机号 */
+.group1_1{
+  width: 670rpx;
+	height: 80rpx;
+	background-color: #f2f2f2;
+	border-radius: 40rpx;
+  margin-top: 64rpx;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 50rpx;
+}
+.input1{
+  flex: 1;
+}
+/* 验证码 */
+.group1_2{
+  width: 670rpx;
+	height: 80rpx;
+	background-color: #f2f2f2;
+	border-radius: 40rpx;
+  margin-top: 34rpx;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 50rpx;
+}
+.input2{
+  flex: 1;
+}
+.code{
+  padding: 0 14rpx;
+}
+.group1_3{
+  width: 670rpx;
+	height: 80rpx;
+  line-height: 80rpx;
+	background-color: #ff6d6d;
+	border-radius: 40rpx;
+  margin-top: 64rpx;
+  font-size: 30rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 2rpx;
+	color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.group1_bottom{
+  margin-top: 100rpx;
+  display: flex;
+}
+.bottom_1{
+  color: #ff6d6d;
+}
+
+
+/* 的做法是对接开发VBUK是不是你看是有十多人广佛饿啊 */
+.content{
+  margin: 0 auto;
+  margin-top:28rpx;
+  height: 90rpx;
+  background: #ededed;
+  color: #666;
+  border-radius: 10px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:16px;
+ 
+}
+.box {
+  height: 100%;
+  background-color: #ff6d6d;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.movable-icon{
+  width: 60rpx;
+  height: 100%;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACVElEQVR4Xu3aLY/VQBTG8f8TVgErFk2wGDyCVbwm4PgQJDgQJKt2eRFkNyTgcXwGDLsECwaFIQGHIgENqEOadJPmht5OOzOlZ9ra3p47z29O78t0xMwPzTw/C8DSATMXWG6BmTfA8iG43AIht4CZPQAeA1+AO5I+hFy37jVmtgm8BC4DB5KexdYccn1nB5jZGeA7sFG/wR/gpqR3Q97w+BozewTsNmq8kHQ/puaQa0MALgCfVopHI5jZIXBtpe7oCCEAJ4BqsFWrNo8oBDO7Bbz+x6yNitAJUA3QzE4Cb4DtxAj3gOf/EyEIoGSEYIBSEXoBlIjQG6A0hEEAJSEMBigFIQqgBIRoAO8ISQA8IyQDyIywAzzN8YsxKYBHhOQA3hCyAHhCyAbgBSErgAeE7AANhGoJ7WLi9YTob4dRAGqE08DbFoRLkj4OWdMzszaEXUlPumqOBtCBcCjpRtdg2863IPwCzkn6sa7u2ABtS2tHkq4nBvgNnJX0cxIAHeuKOW6BPUnVs4y1xygdkHFRdfofglMOX7VG1g6YevisAB7CZwPwEj4LgKfwyQG8hU8KkDF81ueHSb4FvIZP0gGew0cDeA8fBVBC+MEApYQfBFBS+N4ApYXvBVBi+GCAUsP3Aai2s1Xb2prHPLbJmdl54HPK8PUC6RFwdaXuqHsEgzrAzLaAb8CperBRM38c2Mz2gIcNgNHDBwHUs3UbeAV8Be5Ket+12Nh1vrFZ+gqwP9nN0l1BvJ9P8m/QM8IC4Hn2Uox96YAUip5rLB3gefZSjH32HfAX1fX6UCbefU0AAAAASUVORK5CYII=) no-repeat center center;
+  background-size: 100% 100%;
+}

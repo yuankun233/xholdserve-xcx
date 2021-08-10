@@ -1,0 +1,108 @@
+<!--pages/attestation/attestation.wxml-->
+<view class="top">
+	<view class="top_1">
+		<image src="../../image/zzz (1).png"></image>
+		<view>个人信息</view>
+	</view>
+	<view class="top_2">
+		<image wx:if="{{start=='1'}}" src="../../image/zzz (2).png"></image>
+		<image wx:if="{{start=='2'}}" src="../../image/zzz (3).png"></image>
+		<view>执照信息</view>
+	</view>
+</view>
+<view wx:if="{{start=='1'}}" class="modification">
+	<!-- <view class="modification_top">
+		<image src="../../image/icon_logo.png"></image>
+	</view> -->
+	<view class="modification_max">
+		<view class="mydex_hurdle">
+			<view class="mydex_hurdle_l">
+				姓名
+			</view>
+			<input maxlength="7" placeholder="请输入" bindinput="MMname"></input>
+		</view>
+	</view>
+	<view class="modification_max">
+		<view class="mydex_hurdle">
+			<view class="mydex_hurdle_l">
+				性别
+			</view>
+			<radio-group class="radio-group" bindchange="radioChange">
+				<label class="radio" wx:for="{{items}}">
+					<radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+				</label>
+			</radio-group>
+		</view>
+	</view>
+	<view class="modification_max">
+		<view class="mydex_hurdle">
+			<view class="mydex_hurdle_l">
+				年龄
+			</view>
+			<input type="number" maxlength="3" placeholder="请输入" bindinput="MMage"></input>
+		</view>
+	</view>
+	<!-- <view class="modification_max">
+		<view class="mydex_hurdle">
+			<view class="mydex_hurdle_l">
+				电话
+			</view>
+			<input maxlength="11" placeholder="请输入"  bindinput="MMphone"></input>
+		</view>
+	</view> -->
+	<view class="modification_max">
+		<view class="mydex_hurdle">
+			<view class="mydex_hurdle_l">
+				地址
+			</view>
+			<input maxlength="50" placeholder="xx镇xxxxxx号" bindinput="MMaddress"></input>
+		</view>
+	</view>
+	<view class="buttom" bindtap="XYY">
+		下一页
+	</view>
+</view>
+<view wx:if="{{start=='2'}}" class="attestation">
+	<view class="attestation_1">身份验证
+	</view>
+	<view class="attestation_2">
+		<image src="../../image/zuokuai.png"></image>
+		<view>请拍摄并上传身份证照</view>
+		<image src="../../image/youkuai.png"></image>
+	</view>
+	<view class="attestation_3">
+		<view class="attestation_2_Z" bindtap="upSFZZ">
+			<image wx:if="{{SFZZ==''}}" src="../../image/SFZZ.png"></image>
+			<image wx:else src="{{SFZZ}}"></image>
+			<view>拍摄正面</view>
+		</view>
+		<view class="attestation_2_F" bindtap="upSFZF">
+			<image wx:if="{{SFZF==''}}" src="../../image/SFZF.png"></image>
+			<image wx:else src="{{SFZF}}"></image>
+			<view>拍摄反面</view>
+		</view>
+	</view>
+	<view class="attestation_3" style="margin-top:27rpx" bindtap="upZZJ">
+		<view class="attestation_2_Z">
+			<image wx:if="{{ZZJ==''}}" src="../../image/you (3).png"></image>
+			<image wx:else src="{{ZZJ}}"></image>
+			<view>相关资格证</view>
+		</view>
+		<view class="attestation_3_tit">相关资格证选填，余下都必填</view>
+	</view>
+	<view class="section attestation_5">
+		<picker bindchange="bindPickerChange" value="{{index}}" range="{{arrayH}}">
+			<view class="picker">
+				点击选择护理类别：{{arrayH[index]}}
+			</view>
+		</picker>
+	</view>
+	<view style="margin-top:40rpx" class="section attestation_5">
+		<picker bindchange="bindPickerChange1" value="{{index1}}" range="{{allHLZ1}}">
+			<view class="picker">
+				点击选择护理机构：{{allHLZ1[index1]}}
+			</view>
+		</picker>
+	</view>
+	<view class="attestation_4" bindtap="clickRz">去认证</view>
+</view>

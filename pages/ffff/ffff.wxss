@@ -1,0 +1,75 @@
+/* pages/ffff/ffff.wxss */
+page{
+  background: #eee;
+}
+.wen{
+  width:690rpx;
+  height:308rpx;
+  background:#fff;
+  border-radius: 10rpx;
+  margin:0 auto;
+  margin-top:20rpx;
+}
+.wen_box{
+  width:632rpx;
+  height:28rpx;
+  margin:0 auto;
+  margin-top:22rpx;
+  border-radius: 10rpx;
+}
+.wen_box>text{
+  font-size:28rpx;
+  color:#333;
+}
+.wen_box .shu{
+  float: right;
+}
+.weui-input{
+  margin-left:25rpx;
+  margin-top:20rpx;
+}
+
+.shang{
+  width:112rpx;
+  height:110rpx;
+  background:#E5E5E5;
+  margin-top:100rpx;
+  position: relative;
+   margin-left:25rpx;
+}
+.shu1{
+  width:4rpx;
+  height:92rpx;
+  background:#D1D1D1;
+  position: absolute;
+  top:11rpx;
+  left:55rpx;
+}
+.heng{
+    width:92rpx;
+  height:4rpx;
+  background:#D1D1D1;
+  position: absolute;
+  top:55rpx;
+  left:11rpx;
+}
+
+/* ////提交按钮 */
+.group1_3 {
+  width:642rpx;
+height: 78rpx;
+line-height: 80rpx;
+background-color: #ff6d6d;
+border-radius: 10rpx;
+font-size: 30rpx;
+font-weight: normal;
+font-stretch: normal;
+letter-spacing: 2rpx;
+color: #ffffff;
+display: flex;
+justify-content: center;
+align-items: center;
+margin:0 auto;
+margin-top:40rpx;
+
+}
