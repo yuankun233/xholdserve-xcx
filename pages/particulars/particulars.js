@@ -173,7 +173,46 @@ Page({
   },
   // 订单完成
   clickFinish() {
-    
+    var _this = this
+    console.log(_this.data.id_order)
+
+    wx.showModal({
+      title: "提示",
+      content: "是否确认完成订单",
+      success(res) {
+        if (res.confirm) {
+          console.log("用户点击确定")
+          wx.request({
+            url: "https://www.xiaohulaile.com/xh/p/attendxcx/order/order_ok",
+            data: {
+              id: _this.data.id_order,
+              status: 3,
+              token: _this.__data__.token
+            },
+            success(res) {
+              console.log(res, "订单改变状态状态")
+              // 如果改变成功则跳转到已完成
+              if (res.data.msg == "订单完成") {
+                wx.showToast({
+                  title: "订单已完成",
+                  duration: 1000,
+                  success() {
+                    setTimeout(() => {
+                      // 切换到已服务
+                      wx.reLaunch({
+                        url: "/pages/index/index?index_status=3"
+                      })
+                    }, 1000)
+                  }
+                })
+              }
+            }
+          })
+        } else if (res.cancel) {
+          console.log("用户点击取消")
+        }
+      }
+    })
   },
   clickQC() {
     var _this = this

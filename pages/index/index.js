@@ -208,7 +208,6 @@ Page({
   order(e) {
     var _this = this
     console.log(e.currentTarget.dataset.index)
-    console.log(e.currentTarget.dataset.status)
     wx.showModal({
       title: "提示",
       content: "是否接单",
@@ -219,16 +218,25 @@ Page({
             url: "https://www.xiaohulaile.com/xh/p/attendxcx/order/order_ok",
             data: {
               id: _this.__data__.orderList[e.currentTarget.dataset.index].id,
-              status: e.currentTarget.dataset.status,
+              status: 2,
               token: _this.__data__.user.token
             },
             success(res) {
               console.log(res, "订单改变状态状态")
-
-              // // 切换到服务中
-              // _this.setData({
-              //   topStart: 2
-              // })
+              if (res.data.msg == "订单完成") {
+                wx.showToast({
+                  title: "接单成功",
+                  duration: 1000,
+                  success() {
+                    setTimeout(() => {
+                      // 切换到服务中
+                      wx.reLaunch({
+                        url: "/pages/index/index?index_status=2"
+                      })
+                    }, 1000)
+                  }
+                })
+              }
             }
           })
         } else if (res.cancel) {
@@ -242,6 +250,14 @@ Page({
    */
   onLoad: function (options) {
     var _this = this
+    console.log(options.index_status)
+    // 如果有传tab栏的值，更新tab栏
+    if (options.index_status) {
+      _this.setData({
+        topStart: options.index_status
+      })
+    }
+
     console.log("6666666")
     // 获取用户信息
     wx.getStorage({
