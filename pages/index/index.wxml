@@ -48,7 +48,7 @@
         <view class="index_stay_MM_1">{{item.project_name}}</view>
         <view class="index_stay_MM_2" style="margin-top:22rpx;">
           <view>服务时长:</view>
-          <view style="margin-left:114rpx;color:#333333;font-weight: 900;">{{item.num}}次</view>
+          <view style="margin-left:114rpx;color:#333333;font-weight: 900;">{{item.num}}天</view>
         </view>
         <view class="index_stay_MM_3" style="margin-top:22rpx;">
           <view>服务时间:</view>
@@ -121,25 +121,25 @@
       </view>
       <view
         class="index_stay_button_1 {{item.long_status==1?'DD':''}}"
-        bindtap="clickParticulars"
+        catchtap="clickParticulars"
         data-id="{{item.id}}"
       >点击查看详情
       </view>
 
       <view
         class="AA_code"
-        bindtap="code1"
+        catchtap="code1"
         data-id="{{item.id}}"
         data-idx="{{idx}}"
         wx:if="{{item.random_num=='0'}}"
       >获取随机码
       </view>
-      <view
+      <text
+        selectable="{{true}}"
         class="AA_code"
-        bindtap="code1"
         wx:else
       >随机码：{{item.random_num}}
-      </view>
+      </text>
     </view>
   </view>
   <!-- 已完成 -->
@@ -187,7 +187,7 @@
       </view>
       <view
         class="index_stay_button_1 {{item.long_status==1?'DD':''}}"
-        bindtap="clickParticulars"
+        catchtap="clickParticulars"
         data-id="{{item.id}}"
       >点击查看详情
       </view>

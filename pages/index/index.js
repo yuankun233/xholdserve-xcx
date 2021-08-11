@@ -15,7 +15,7 @@ Page({
     //分页
     page_no: 1
   },
-  // 获取验证码
+  // 获取随机码
   async code1(e) {
     console.log(e.currentTarget.dataset.id)
     console.log(e.currentTarget.dataset.idx, "kanxiabao")
@@ -27,7 +27,7 @@ Page({
       }
     })
     console.log(res.data.data, "kankna")
-    var price = "info2[" + e.currentTarget.dataset.idx + "].random_num"
+    var price = "orderList[" + e.currentTarget.dataset.idx + "].random_num"
     _this.setData({
       [price]: res.data.data
     })

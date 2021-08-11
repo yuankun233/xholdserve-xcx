@@ -3,20 +3,23 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {},
+  data: {
+    // 录音链接
+    contents: "https://www.xiaohulaile.com/luyinhtml/QuickStart.html"
+  },
   FZ() {
     wx.setClipboardData({
-      data: 'https://www.xiaohulaile.com/luyinhtml/QuickStart.html',
+      data: "https://www.xiaohulaile.com/luyinhtml/QuickStart.html",
       success: function (res) {
         wx.getClipboardData({
           success: function (res) {
             wx.showToast({
-              title: '复制成功',
-            });
-          },
-        });
-      },
-    });
+              title: "复制成功"
+            })
+          }
+        })
+      }
+    })
   },
   /**
    * 生命周期函数--监听页面加载
@@ -56,5 +59,5 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {},
-});
+  onShareAppMessage: function () {}
+})

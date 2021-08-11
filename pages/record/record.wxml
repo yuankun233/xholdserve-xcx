@@ -1,6 +1,9 @@
 <!--pages/record/record.wxml-->
 <view>
-	<image mode="widthFix" src="../../image/123123123.png"></image>
-  <view bindtap="FZ">点击下方复制链接</view>
-	<text>https://www.xiaohulaile.com/luyinhtml/QuickStart.html</text>
+  <image mode="widthFix" src="../../image/123123123.png"></image>
+  <!-- <view >点击下方复制链接</view> -->
+  <text selectable="{{true}}">https://www.xiaohulaile.com/luyinhtml/QuickStart.html</text>
+  <button bindtap="FZ" type="primary">点击复制链接</button>
+
 </view>
+
