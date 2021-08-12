@@ -21,7 +21,8 @@ Page({
     token: "",
     info: "",
     isSHOW: false,
-    toSet: []
+    toSet: [],
+    tabStatus:""
   },
   doSometing(data) {
     // 获取日历组件上的 calendar 对象
@@ -76,6 +77,7 @@ Page({
       }
     })
   },
+  // 查询对应订单数据
   async getInfo() {
     var _this = this
     // console.log(_this);
@@ -86,7 +88,7 @@ Page({
         token: _this.__data__.token
       }
     })
-    console.log(res, "111")
+    console.log(res, "获取当前订单")
 
     _this.setData({
       info: res.data.data
@@ -192,7 +194,7 @@ Page({
             success(res) {
               console.log(res, "订单改变状态状态")
               // 如果改变成功则跳转到已完成
-              if (res.data.msg == "订单完成") {
+              if (res.data.msg == "操作成功") {
                 wx.showToast({
                   title: "订单已完成",
                   duration: 1000,
@@ -255,7 +257,10 @@ Page({
    */
   onLoad: function (options) {
     var that = this
-
+    console.log(options);
+    this.setData({
+      tabStatus:options.tabStatus
+    })
     wx.getStorage({
       key: "id_order",
       success(res) {

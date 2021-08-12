@@ -23,8 +23,8 @@
   <!-- 服务时长 -->
   <view class="particulars_day">
     <view class="particulars_day_1">
-      <view style="font-weight:900">服务时长:</view>
-      <view style="color:#999999;margin-left:15rpx">{{info.length_service}}天</view>
+      <view style="font-weight:900">服务次数:</view>
+      <view style="color:#999999;margin-left:15rpx">{{info.num}}次</view>
     </view>
     <view class="particulars_day_2">
       <view style="font-weight:900">服务时间:</view>
@@ -48,7 +48,7 @@
       <view
         class="particulars_day_5_l"
         style="margin:0 auto"
-        wx:if="{{info.status!='3'}}"
+        wx:if="{{tabStatus==2}}"
         bindtap="clickFinish"
       >完成
       </view>

@@ -7,9 +7,9 @@ Page({
   data: {
     user: "", // 用户信息
     topStart: 1, //代表订单状态
-    info1: [],
-    info2: [],
-    info3: [],
+    // info1: [],
+    // info2: [],
+    // info3: [],
     orderList: [], //订单列表
     none: "",
     //分页
@@ -115,86 +115,86 @@ Page({
       orderList: [..._this.__data__.orderList, ...res.data.data.datalist]
     })
   },
-  // 待接单订单列表
-  async getInfo1(page) {
-    var _this = this
-    console.log(_this, "222")
-    var res = await fetch({
-      url: "https://www.xiaohulaile.com/xh/p/attendxcx/order/order_list",
-      data: {
-        order_status: 1,
-        token: _this.__data__.user.token,
-        // id: _this.__data__.id,
-        page_no: page, // 页码
-        id: _this.__data__.user.id
-      }
-    })
-    console.log(res.data.data, "待接单订单数据")
-    console.log(res.data.message, "待接单请求状态")
-    if (res.data.message == "暂无订单") {
-      this.setData({
-        info1: []
-      })
-      return
-    }
-    _this.setData({
-      info1: [..._this.__data__.info1, ...res.data.data.datalist]
-    })
-  },
-  // 服务中订单列表
-  async getInfo2(id, page) {
-    var _this = this
-    console.log(_this, "222")
-    var res = await fetch({
-      url: "https://www.xiaohulaile.com/xh/p/attendxcx/order/order_list",
-      data: {
-        status: id,
-        order_status: 2,
-        token: _this.__data__.user.token,
-        // id: _this.__data__.id,
-        page_no: page,
-        id: _this.__data__.user.id
-      }
-    })
-    console.log(res.data.data, "服务中订单数据")
-    console.log(res.data.message, "服务中订单请求状态")
-    if (res.data.message == "暂无订单") {
-      this.setData({
-        info2: []
-      })
-      return
-    }
-    this.setData({
-      info2: [..._this.__data__.info2, ...res.data.data.datalist]
-    })
-  },
-  // 已完成订单列表
-  async getInfo3(id, page) {
-    var _this = this
-    console.log(_this, "222")
-    var res = await fetch({
-      url: "https://www.xiaohulaile.com/xh/p/attendxcx/order/order_list",
-      data: {
-        status: id,
-        order_status: 3,
-        token: _this.__data__.user.token,
-        // id: _this.__data__.id,
-        page_no: page,
-        id: _this.__data__.user.id
-      }
-    })
-    console.log(res.data, "已完成订单数据")
-    console.log(res.data.message, "已完成请求状态")
-    if (res.data.message == "暂无订单") {
-      this.setData({
-        info3: []
-      })
-      return
-    }
-    this.setData({
-      info3: [..._this.__data__.info3, ...res.data.data.datalist]
-    })
-  },
+  // // 待接单订单列表
+  // async getInfo1(page) {
+  //   var _this = this
+  //   console.log(_this, "222")
+  //   var res = await fetch({
+  //     url: "https://www.xiaohulaile.com/xh/p/attendxcx/order/order_list",
+  //     data: {
+  //       order_status: 1,
+  //       token: _this.__data__.user.token,
+  //       // id: _this.__data__.id,
+  //       page_no: page, // 页码
+  //       id: _this.__data__.user.id
+  //     }
+  //   })
+  //   console.log(res.data.data, "待接单订单数据")
+  //   console.log(res.data.message, "待接单请求状态")
+  //   if (res.data.message == "暂无订单") {
+  //     this.setData({
+  //       info1: []
+  //     })
+  //     return
+  //   }
+  //   _this.setData({
+  //     info1: [..._this.__data__.info1, ...res.data.data.datalist]
+  //   })
+  // },
+  // // 服务中订单列表
+  // async getInfo2(id, page) {
+  //   var _this = this
+  //   console.log(_this, "222")
+  //   var res = await fetch({
+  //     url: "https://www.xiaohulaile.com/xh/p/attendxcx/order/order_list",
+  //     data: {
+  //       status: id,
+  //       order_status: 2,
+  //       token: _this.__data__.user.token,
+  //       // id: _this.__data__.id,
+  //       page_no: page,
+  //       id: _this.__data__.user.id
+  //     }
+  //   })
+  //   console.log(res.data.data, "服务中订单数据")
+  //   console.log(res.data.message, "服务中订单请求状态")
+  //   if (res.data.message == "暂无订单") {
+  //     this.setData({
+  //       info2: []
+  //     })
+  //     return
+  //   }
+  //   this.setData({
+  //     info2: [..._this.__data__.info2, ...res.data.data.datalist]
+  //   })
+  // },
+  // // 已完成订单列表
+  // async getInfo3(id, page) {
+  //   var _this = this
+  //   console.log(_this, "222")
+  //   var res = await fetch({
+  //     url: "https://www.xiaohulaile.com/xh/p/attendxcx/order/order_list",
+  //     data: {
+  //       status: id,
+  //       order_status: 3,
+  //       token: _this.__data__.user.token,
+  //       // id: _this.__data__.id,
+  //       page_no: page,
+  //       id: _this.__data__.user.id
+  //     }
+  //   })
+  //   console.log(res.data, "已完成订单数据")
+  //   console.log(res.data.message, "已完成请求状态")
+  //   if (res.data.message == "暂无订单") {
+  //     this.setData({
+  //       info3: []
+  //     })
+  //     return
+  //   }
+  //   this.setData({
+  //     info3: [..._this.__data__.info3, ...res.data.data.datalist]
+  //   })
+  // },
   // 前往订单详情
   clickParticulars(e) {
     console.log(e.currentTarget.dataset)
@@ -203,7 +203,7 @@ Page({
       data: e.currentTarget.dataset.id
     })
     wx.navigateTo({
-      url: "/pages/particulars/particulars"
+      url: `/pages/particulars/particulars?tabStatus=${this.data.topStart}`
     })
   },
   // 将待接单订单变为服务中
@@ -225,7 +225,7 @@ Page({
             },
             success(res) {
               console.log(res, "订单改变状态状态")
-              if (res.data.msg == "订单完成") {
+              if (res.data.msg == "操作成功") {
                 wx.showToast({
                   title: "接单成功",
                   duration: 1000,

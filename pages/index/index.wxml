@@ -28,7 +28,11 @@
       <view>暂无内容</view>
     </view>
     <!-- 有单 -->
-    <view class="index_stay {{item.long_status==1?'PP':''}}" wx:for="{{orderList}}">
+    <view
+      class="index_stay {{item.long_status==1?'PP':''}}"
+      wx:for="{{orderList}}"
+      wx:key="item.id"
+    >
       <view class="index_stay_top">
         <view class="index_stay_top_l">
           <text>服务对象:</text>
@@ -47,8 +51,8 @@
       <view class="index_stay_MM">
         <view class="index_stay_MM_1">{{item.project_name}}</view>
         <view class="index_stay_MM_2" style="margin-top:22rpx;">
-          <view>服务时长:</view>
-          <view style="margin-left:114rpx;color:#333333;font-weight: 900;">{{item.num}}天</view>
+          <view>服务次数:</view>
+          <view style="margin-left:114rpx;color:#333333;font-weight: 900;">{{item.num}}次</view>
         </view>
         <view class="index_stay_MM_3" style="margin-top:22rpx;">
           <view>服务时间:</view>
@@ -84,6 +88,7 @@
     <view
       class="index_stay  {{item.long_status==1?'PP':''}}"
       wx:for="{{orderList}}"
+      wx:key="item.id"
       wx:for-index="idx"
       catchtap="clickParticulars"
       data-id="{{item.id}}"
@@ -104,8 +109,8 @@
       <view class="index_stay_MM">
         <view class="index_stay_MM_1">{{item.project_name}}</view>
         <view class="index_stay_MM_2" style="margin-top:22rpx;">
-          <view>服务时长:</view>
-          <view style="margin-left:114rpx;color:#333333;font-weight: 900;">{{item.length_service}}天</view>
+          <view>服务次数:</view>
+          <view style="margin-left:114rpx;color:#333333;font-weight: 900;">{{item.num}}次</view>
         </view>
         <view class="index_stay_MM_3" style="margin-top:22rpx;">
           <view>服务时间:</view>
@@ -126,7 +131,7 @@
       >点击查看详情
       </view>
 
-      <view
+      <!-- <view
         class="AA_code"
         catchtap="code1"
         data-id="{{item.id}}"
@@ -139,7 +144,7 @@
         class="AA_code"
         wx:else
       >随机码：{{item.random_num}}
-      </text>
+      </text> -->
     </view>
   </view>
   <!-- 已完成 -->
@@ -170,8 +175,8 @@
       <view class="index_stay_MM">
         <view class="index_stay_MM_1">{{item.project_name}}</view>
         <view class="index_stay_MM_2" style="margin-top:22rpx;">
-          <view>服务时长:</view>
-          <view style="margin-left:114rpx;color:#333333;font-weight: 900;">{{item.length_service}}天</view>
+          <view>服务次数:</view>
+          <view style="margin-left:114rpx;color:#333333;font-weight: 900;">{{item.num}}次</view>
         </view>
         <view class="index_stay_MM_3" style="margin-top:22rpx;">
           <view>服务时间:</view>
