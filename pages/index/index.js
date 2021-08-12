@@ -26,7 +26,7 @@ Page({
         id: e.currentTarget.dataset.id
       }
     })
-    console.log(res.data.data, "kankna")
+    console.log(res.data.data, "随机码")
     var price = "orderList[" + e.currentTarget.dataset.idx + "].random_num"
     _this.setData({
       [price]: res.data.data
@@ -73,14 +73,16 @@ Page({
   async getOrderList() {
     var _this = this
     console.log(this.data.topStart)
+    const cate = this.data.topStart - 1
+    console.log(cate)
     // 请求列表
     var res = await fetch({
       url: "https://www.xiaohulaile.com/xh/p/attendxcx/order/order_list",
       data: {
-        // order_status: 1,
+        order_status: cate,
         token: _this.__data__.user.token,
         // id: _this.__data__.id,
-        status: _this.data.topStart, // 订单类型
+        // status: _this.data.topStart, // 订单类型
         page_no: _this.data.page_no, // 页码
         id: _this.__data__.user.id // 护士id
       }
@@ -218,7 +220,7 @@ Page({
             url: "https://www.xiaohulaile.com/xh/p/attendxcx/order/order_ok",
             data: {
               id: _this.__data__.orderList[e.currentTarget.dataset.index].id,
-              status: 2,
+              order_status: 1,
               token: _this.__data__.user.token
             },
             success(res) {

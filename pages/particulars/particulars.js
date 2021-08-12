@@ -186,7 +186,7 @@ Page({
             url: "https://www.xiaohulaile.com/xh/p/attendxcx/order/order_ok",
             data: {
               id: _this.data.id_order,
-              status: 3,
+              order_status: 2,
               token: _this.__data__.token
             },
             success(res) {
