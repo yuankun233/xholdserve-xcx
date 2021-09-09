@@ -17,16 +17,9 @@
     "pages/audit_1/audit_1",
     "pages/transfer/transfer",
     "pages/order_out/order_out",
-    "pages/course/course",
-    "pages/cheshi1111/cheshi111",
     "pages/vacation/vacation",
     "pages/record/record",
-    "pages/AllCourse/AllCourse",
-    "pages/CourseDetails/CourseDetails",
-    "pages/cheshi/111",
-    "pages/blood/blood",
-    "pages/blood/bloodItem/bloodItem",
-    "pages/blood/bloodUp/bloodUp"
+    "pages/AllCourse/AllCourse"
   ],
   "permission": {
     "scope.userLocation": {

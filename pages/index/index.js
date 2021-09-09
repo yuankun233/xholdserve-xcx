@@ -225,7 +225,7 @@ Page({
             },
             success(res) {
               console.log(res, "订单改变状态状态")
-              if (res.data.msg == "操作成功") {
+              if (res.data.order_status == "1") {
                 wx.showToast({
                   title: "接单成功",
                   duration: 1000,

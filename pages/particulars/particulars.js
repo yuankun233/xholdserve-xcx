@@ -194,7 +194,8 @@ Page({
             success(res) {
               console.log(res, "订单改变状态状态")
               // 如果改变成功则跳转到已完成
-              if (res.data.msg == "操作成功") {
+              // 所有服务次数均已完成
+              if (res.data.order_status==2) {
                 wx.showToast({
                   title: "订单已完成",
                   duration: 1000,
@@ -208,6 +209,23 @@ Page({
                   }
                 })
               }
+              // 完成单次服务，刷新本页面
+              if (res.data.order_status==1) {
+                
+                wx.showToast({
+                  title: "订单已完成",
+                  duration: 1000,
+                  success() {
+                    setTimeout(() => {
+                      // 切换到已服务
+                      wx.reLaunch({
+                        url: "/pages/index/index?index_status=2"
+                      })
+                    }, 1000)
+                  }
+                })
+              }
+
             }
           })
         } else if (res.cancel) {

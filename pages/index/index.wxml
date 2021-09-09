@@ -108,18 +108,22 @@
       <!-- 详情 -->
       <view class="index_stay_MM">
         <view class="index_stay_MM_1">{{item.project_name}}</view>
-        <view class="index_stay_MM_2" style="margin-top:22rpx;">
+        <view class="index_stay_MM_2" style="margin-top:20rpx;">
           <view>服务次数:</view>
           <view style="margin-left:114rpx;color:#333333;font-weight: 900;">{{item.num}}次</view>
         </view>
-        <view class="index_stay_MM_3" style="margin-top:22rpx;">
+        <view class="index_stay_MM_2">
+          <view>已服务次数:</view>
+          <view style="margin-left:114rpx;color:#333333;font-weight: 900;">{{item.order_num}}次</view>
+        </view>
+        <view class="index_stay_MM_3" style="margin-top:10rpx;">
           <view>服务时间:</view>
           <view style="margin-left:28rpx;">
             <view>起 {{item.service_text}}</view>
             <view>止 {{item.service_end}}</view>
           </view>
         </view>
-        <view class="index_stay_MM_4" style="margin-top:22rpx;">
+        <view class="index_stay_MM_4" style="margin-top:20rpx;">
           <view>订单号:</view>
           <view style="margin-left:28rpx;">{{item.out_trade_no}}</view>
         </view>
